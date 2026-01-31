@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Valentine — For Mommy</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main class="stage">
+
+  <!-- HEART SECTION -->
+  <section class="hero">
+    <div id="heartWrap" class="heart-wrap">
+      <svg viewBox="0 0 200 180" class="heart heartbeat">
+        <g id="leftHalf">
+          <rect x="40" y="20" width="40" height="40"/>
+          <rect x="20" y="60" width="40" height="40"/>
+          <rect x="40" y="60" width="40" height="40"/>
+          <rect x="60" y="60" width="40" height="40"/>
+          <rect x="40" y="100" width="40" height="40"/>
+        </g>
+
+        <g id="rightHalf">
+          <rect x="120" y="20" width="40" height="40"/>
+          <rect x="100" y="60" width="40" height="40"/>
+          <rect x="120" y="60" width="40" height="40"/>
+          <rect x="140" y="60" width="40" height="40"/>
+          <rect x="120" y="100" width="40" height="40"/>
+        </g>
+      </svg>
+
+      <!-- FIRST MESSAGE -->
+      <div id="firstMessage" class="message hidden">
+        <h1>Happy Valentine’s Day Mommy 🍒</h1>
+        <button id="nextBtn">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOVE LETTER -->
+  <section id="letterSection" class="letter hidden">
+    <div class="card">
+      <h2>✉️ A Letter for You</h2>
+      <div id="letterText"></div>
+
+      <div id="photos" class="photos hidden">
+        <img id="photo" src="" alt="Photo"/>
+        <div class="photo-buttons">
+          <button id="prevPhoto">Prev</button>
+          <button id="nextPhoto">Next</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="flowers"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
